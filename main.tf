@@ -20,3 +20,7 @@ provider "azurerm" {
 
   }
 }
+resource "azurerm_resource_group" "example" {
+  name     = "github-action-setup"
+  location = "West Europe"
+}
