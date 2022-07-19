@@ -34,7 +34,7 @@ jobs:
     - title: Checking the gates
       actions:
         - type: gate
-          left : 'main1'
+          left : 'main12'
           operator : ===
           right: ${{github.ref_name }}
  
