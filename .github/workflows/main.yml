@@ -26,12 +26,12 @@ jobs:
         shell: bash
  
     steps:
-    - title: Add the gate
-      actions:
-        - type: gate
-          left: 'main1'
-          operator: ===
-          right: ${{ github.head_ref }}
+#     - title: Add the gate
+#       actions:
+#         - type: gate
+#           left: 'main1'
+#           operator: ===
+#           right: ${{ github.head_ref }}
     # Checkout the repository to the GitHub Actions runner
     - name: Checkout
       uses: actions/checkout@v2
