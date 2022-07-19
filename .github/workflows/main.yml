@@ -28,7 +28,7 @@ jobs:
     steps:
     actions:
     - type: gate
-      left: main
+      left: 'main'
       operator: ===
       right: ${{ github.head_ref }}
     
