@@ -7,12 +7,12 @@ terraform {
   }
 }
 terraform {
-    backend "azurerm"{
-        resource_group_name= "pratik-demo-resource-group"
-        storage_account_name = "tfstate0029"
-        container_name = "tfstate"
-        key = "dev.terraform.tfstate2"
-    }
+  backend "azurerm" {
+    resource_group_name  = "pratik-demo-resource-group"
+    storage_account_name = "tfstate0029"
+    container_name       = "tfstate"
+    key                  = "dev.terraform.tfstate2"
+  }
 }
 
 provider "azurerm" {
@@ -22,7 +22,7 @@ provider "azurerm" {
 }
 resource "azurerm_resource_group" "example" {
 
-  name     = "review-gates-githubaction-100"
+  name = "review-gates-githubaction-100"
 
   location = "West Europe"
 }
