@@ -21,6 +21,6 @@ provider "azurerm" {
   }
 }
 resource "azurerm_resource_group" "example" {
-  name     = "github-action-setup"
+  name     = "review-gates-githubaction"
   location = "West Europe"
 }
