@@ -30,7 +30,7 @@ jobs:
     - type: gate
       left: 'main'
       operator: ===
-      right: ${{ github.head_ref }}
+      right: '${{ github.head_ref }}'
     
       
  
