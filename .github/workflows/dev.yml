@@ -9,7 +9,8 @@ on:
 jobs:
   
   terraform:
-    
+    name: Branch name
+    run: echo running on branch ${GITHUB_REF##*/}
     name: 'Terraform'
     #Checking if branch name is correct.
     if:  github.branch == 'sapkotapratik/az-400-learning/tree/main' 
