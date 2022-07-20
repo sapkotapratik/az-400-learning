@@ -26,11 +26,11 @@ jobs:
         shell: bash
  
     steps:
-      actions:
-        - type: gate
-          left: 'main'
-          operator: ===
-          right: '${{ github.head_ref }}'
+#       actions:
+#         - type: gate
+#           left: 'main'
+#           operator: ===
+#           right: '${{ github.head_ref }}'
     
       
  
