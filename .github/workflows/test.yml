@@ -11,7 +11,7 @@ jobs:
   terraform:
     
     name: 'Terraform'
-    if: github.repository.branch == 'sapkotapratik/az-400-learning'
+    if: github.repository == 'sapkotapratik/az-400-learning'
     env:
       ARM_CLIENT_ID: ${{ secrets.AZURE_AD_CLIENT_ID }}
       ARM_CLIENT_SECRET: ${{ secrets.AZURE_AD_CLIENT_SECRET }}
