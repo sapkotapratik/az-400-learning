@@ -32,7 +32,7 @@ jobs:
  
     steps:
     - name: Check the name of the owner
-      if:GITHUB_REPOSITORY_OWNER == "sapkotapratik"
+      if: GITHUB_REPOSITORY_OWNER == "sapkotapratik"
 #        actions:
 #          - type: gate
 #            left: 'main'
