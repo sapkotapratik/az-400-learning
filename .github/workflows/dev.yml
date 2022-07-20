@@ -12,7 +12,7 @@ jobs:
     
     name: 'Terraform'
     #Checking if branch name is correct.
-    if: github.head_ref  == 'main1'
+    if: github.head_ref  == 'main'
     env:
       ARM_CLIENT_ID: ${{ secrets.AZURE_AD_CLIENT_ID }}
       ARM_CLIENT_SECRET: ${{ secrets.AZURE_AD_CLIENT_SECRET }}
