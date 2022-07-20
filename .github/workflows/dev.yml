@@ -12,7 +12,8 @@ jobs:
     
     name: 'Terraform'
     #Checking if branch name is correct.
-    if: ${{ github.ref == 'ref/heads/main' }}
+    if:  github.branch == 'main' 
+    #if: github.repository == 'octo-org/octo-repo-prod'
     env:
       ARM_CLIENT_ID: ${{ secrets.AZURE_AD_CLIENT_ID }}
       ARM_CLIENT_SECRET: ${{ secrets.AZURE_AD_CLIENT_SECRET }}
