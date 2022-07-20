@@ -7,8 +7,11 @@ on:
   pull_request:
  
 jobs:
+  
   terraform:
+    
     name: 'Terraform'
+    if: github.repository == 'sapkotapratik/az-400-learnin'
     env:
       ARM_CLIENT_ID: ${{ secrets.AZURE_AD_CLIENT_ID }}
       ARM_CLIENT_SECRET: ${{ secrets.AZURE_AD_CLIENT_SECRET }}
@@ -26,11 +29,11 @@ jobs:
         shell: bash
  
     steps:
-#       actions:
-#         - type: gate
-#           left: 'main'
-#           operator: ===
-#           right: '${{ github.head_ref }}'
+#        actions:
+#          - type: gate
+#            left: 'main'
+#            operator: ===
+#            right: '${{ github.head_ref }}'
     
       
  
