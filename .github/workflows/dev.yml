@@ -9,11 +9,10 @@ on:
 jobs:
   
   terraform:
-    name: Branch name
-    run: echo running on branch ${GITHUB_REF##*/}
+
     name: 'Terraform'
     #Checking if branch name is correct.
-    if:  github.branch == 'sapkotapratik/az-400-learning/tree/main' 
+    # if:  github.branch == 'sapkotapratik/az-400-learning/tree/main'
     #if: github.repository == 'octo-org/octo-repo-prod'
     env:
       ARM_CLIENT_ID: ${{ secrets.AZURE_AD_CLIENT_ID }}
@@ -32,6 +31,8 @@ jobs:
         shell: bash
  
     steps:
+    - name: Check the name of the owner
+      if:GITHUB_REPOSITORY_OWNER == "sapkotapratik"
 #        actions:
 #          - type: gate
 #            left: 'main'
