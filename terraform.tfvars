@@ -1,3 +1,3 @@
 
-rg_name  = "review-gates-githubaction-100"
+rg_name  = "review-gates-githubaction"
 rg_location = "centralindia"
